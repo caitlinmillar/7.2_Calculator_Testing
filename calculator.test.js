@@ -90,3 +90,7 @@ describe('testing odd or even', () => {
         expect('Even').toBe(oddOrEven.oddOrEven(13245642));
     })
 });
+
+test('testing Even number is not Odd', () => {
+    expect('Odd').not.toBe(oddOrEven.oddOrEven(4));
+})
