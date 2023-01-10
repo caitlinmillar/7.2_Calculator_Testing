@@ -59,7 +59,7 @@ describe('testing division', () => {
     test('can divide using a negative number', ()=>{
         expect(-5).toBe(calculator.divide(-10,2));
     })
-    test('can subtract using two negative numbers', ()=>{
+    test('can divide using two negative numbers', ()=>{
         expect(2).toBe(calculator.divide(-6,-3));
     })
 });
@@ -94,3 +94,4 @@ describe('testing odd or even', () => {
 test('testing Even number is not Odd', () => {
     expect('Odd').not.toBe(oddOrEven.oddOrEven(4));
 })
+
