@@ -66,4 +66,11 @@ describe('testing modulus', () => {
     test('can attain modulus using two positive numbers', ()=>{
         expect(3).toBe(calculator.modulus(3,4));
     })
+    test('can attain modulus using one negative number', ()=>{
+        expect(-2).toBe(calculator.modulus(-5,3));
+    })
+    test('can attain modulus using two negative numbers', ()=>{
+        expect(-5).toBe(calculator.modulus(-5,-9));
+    })
+
 });
