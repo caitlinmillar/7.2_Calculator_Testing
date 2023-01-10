@@ -18,7 +18,6 @@ const Calculator = function (){
     }
 }
 
-let num = 6;
 const OddOrEven = function(){
         this.oddOrEven = function (num){
     if(num % 2===0){
