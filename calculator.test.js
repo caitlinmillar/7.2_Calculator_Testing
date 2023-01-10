@@ -77,7 +77,16 @@ describe('testing modulus', () => {
 });
 
 describe('testing odd or even', () => {
-    test('can attain odd or even using positive numbers', ()=>{
+    test('can attain odd using positive numbers', ()=>{
         expect('Odd').toBe(oddOrEven.oddOrEven(3));
+    })
+    test('can attain odd using positive numbers', ()=>{    
+        expect('Odd').toBe(oddOrEven.oddOrEven(1324567));
+    })
+    test('can attain even using positive numbers', ()=>{
+        expect('Even').toBe(oddOrEven.oddOrEven(14));
+    })
+    test('can attain odd using positive numbers', ()=>{    
+        expect('Even').toBe(oddOrEven.oddOrEven(13245642));
     })
 });
