@@ -1,5 +1,5 @@
 // location to get the function you made
-const {Calculator} = require('./calculator');
+const {Calculator, OddOrEven} = require('./calculator');
 
 // AAA of testing
 // ARRANGE (data), ACT(call function u are actually using), ASSERT(check result)
@@ -8,9 +8,11 @@ const {Calculator} = require('./calculator');
 // needs to be set out here to have global scope instead of block scope
 // default let
 let calculator;
+let oddOrEven;
 
 beforeEach(()=> {
     calculator = new Calculator();
+    oddOrEven = new OddOrEven();
 })
 
 describe('testing addition', () => {
@@ -72,5 +74,10 @@ describe('testing modulus', () => {
     test('can attain modulus using two negative numbers', ()=>{
         expect(-5).toBe(calculator.modulus(-5,-9));
     })
+});
 
+describe('testing odd or even', () => {
+    test('can attain odd or even using positive numbers', ()=>{
+        expect('Odd').toBe(oddOrEven.oddOrEven(3));
+    })
 });

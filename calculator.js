@@ -16,16 +16,21 @@ const Calculator = function (){
     this.modulus = function (num1, num2){
         return num1 % num2;
     }
-
-    this.odd = function name(params) {
-        
-    }
-
-    this.even = function name(params) {
-        
-    }
 }
 
-module.exports = {Calculator};
+let num = 6;
+const OddOrEven = function(){
+        this.oddOrEven = function (num){
+    if(num % 2===0){
+        return 'Even'
+    } else {
+        return 'Odd'
+    };
+}
+}
+
+module.exports = {
+    Calculator,
+    OddOrEven};
 
 
