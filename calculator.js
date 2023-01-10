@@ -14,7 +14,7 @@ const Calculator = function (){
         return num1 / num2;
     };
     this.modulus = function (num1, num2){
-        return 
+        return num1 % num2;
     }
 
     this.odd = function name(params) {

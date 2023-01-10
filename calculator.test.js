@@ -61,3 +61,9 @@ describe('testing division', () => {
         expect(2).toBe(calculator.divide(-6,-3));
     })
 });
+
+describe('testing modulus', () => {
+    test('can attain modulus using two positive numbers', ()=>{
+        expect(3).toBe(calculator.modulus(3,4));
+    })
+});
